@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Extractor with Mosaics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Image Color Extractor with Mosaics</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <h2>Original Image</h2>
+    <div class="image-container">
+        <canvas id="imageCanvas"></canvas>
+    </div>
+
+    <h2>2x2 Mosaic</h2>
+    <div class="image-container">
+        <canvas id="mosaic2x2Canvas"></canvas>
+    </div>
+
+    <h2>4x4 Mosaic</h2>
+    <div class="image-container">
+        <canvas id="mosaic4x4Canvas"></canvas>
+    </div>
+
+    <h2>2x2 Colors</h2>
+    <div id="grid2x2"></div>
+
+    <h2>4x4 Colors</h2>
+    <div id="grid4x4"></div>
+
+    <h2>Brightness & Complementary</h2>
+    <div id="sortedColors"></div>
+    <div id="complementaryColors"></div>
+
+
+    <h2>Brightest and Darkest</h2>
+    <div id="brightestDarkest"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
