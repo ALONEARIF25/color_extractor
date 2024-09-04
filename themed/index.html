@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Extractor with Mosaics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="margin-bottom: 0px;">Image Color Extractor with Mosaics</h1>
+    <h4 style=" font-weight: 200; margin: auto; width: 50ch;">This web application allows users to
+        upload an image,
+        create mosaic
+        tiles from it,
+        and extract and display color information.</h4>
+    <label for="imageUpload" style="
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 2s ease;
+  margin-top: 20px;
+">
+        Choose File
+    </label>
+    <div style="z-index: -10;">
+        <input type="file" id="imageUpload" accept="image/*" style="display: none; opacity: 0;">
+    </div>
+
+
+    <div style="display: none;">
+        <h2>Original Image</h2>
+        <div class="image-container">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+
+        <h2>2x2 Mosaic</h2>
+        <div class="image-container">
+            <canvas id="mosaic2x2Canvas"></canvas>
+        </div>
+
+        <h2>4x4 Mosaic</h2>
+        <div class="image-container">
+            <canvas id="mosaic4x4Canvas"></canvas>
+        </div>
+
+        <div class="colorContainer">
+            <h2>2x2 Colors</h2>
+            <div id="grid2x2"></div>
+
+            <h2>4x4 Colors</h2>
+            <div id="grid4x4"></div>
+
+            <h2>Brightness & Complementary</h2>
+            <div id="sortedColors"></div>
+            <div id="complementaryColors"></div>
+
+
+            <h2>Brightest and Darkest</h2>
+            <div id="brightestDarkest"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <h4 style="font-weight: 100; font-size: 13px">Crafted by AloneArif 2024</h4>
+    </footer>
+
+</body>
+
+
+</html>
