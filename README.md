@@ -13,11 +13,11 @@ Welcome to the Color Mosaic Generator! This web application allows users to uplo
 
 ## Demo
 
-You can view a live demo of the application [here](URL_TO_DEMO).
+You can view a live demo of the application [here](https://alonearif25.github.io/color_extractor/themed/).
 
 ## Installation
 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/color-mosaic-generator.git
+   git clone https://github.com/alonearif25/color_extractor.git
